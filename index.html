@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login Page</title>
+    <style>
+        .insta-full {
+
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            margin: 10px 10px 10px 10px;
+            padding: 10px 10px 10px 10px;
+
+        }
+
+        .insta-half {
+
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(134, 131, 131);
+            border-radius: 5px;
+            height: 66vh;
+            width: 70vh;
+
+        }
+
+        .insta-name {
+            display: flex;
+            justify-content: center;
+            padding-top: 5px;
+            padding-bottom: 0px;
+           
+        }
+
+        .insta-name h1 {
+            font-family: cursive;
+
+        }
+
+        .insta-inp {
+            /* display: flex;
+            justify-content: center;
+           flex-wrap: wrap; */
+
+            padding-bottom: 20px;
+        }
+
+        .insta-inp-1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+
+
+        }
+
+        .insta-inp-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+
+        }
+
+        .inp-1 {
+            height: 30px;
+            width: 270px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            background-color: whitesmoke;
+        }
+
+        .inp-1::placeholder {
+            padding-left: 5px;
+
+        }
+
+        .inp-2::placeholder {
+            padding-left: 5px;
+        }
+
+        .inp-2 {
+            height: 30px;
+            width: 270px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            background-color: whitesmoke;
+        }
+
+        .insta-login-1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .insta-login {
+            text-align: center;
+
+            padding: 10px;
+
+            background-color: rgba(0, 154, 243, 0.658);
+            border-radius: 10px;
+            width: 270px;
+
+
+        }
+
+        .insta-login a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        .insta-or {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .s-2 {
+            color: grey;
+            font-weight: 500;
+        }
+
+        .s-1 {
+            color: grey;
+            opacity: 0.5;
+        }
+
+        .s-3 {
+            color: grey;
+            opacity: 0.5;
+        }
+
+        .insta-fb {
+            padding-top: 25px;
+            text-align: center;
+      
+        }
+
+        .insta-fb a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            color:     #284d9c !important;
+        }
+
+        .fb-pic {
+            height: 14px;
+            width: 14px;
+filter: saturate(-40);
+            margin-right: 5px;
+        }
+
+        .forget {
+            text-align: center;
+            padding-top: 25px;
+        }
+
+        .forget a {
+            text-decoration: none;
+            color: rgb(4, 4, 226);
+        }
+
+        .box {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*           
+            margin: 10px 10px 10px 10px;
+            padding: 10px 10px 10px 10px; */
+
+        }
+
+        .box-1 {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(134, 131, 131);
+            border-radius: 5px;
+          
+            width: 70vh;
+           
+            text-align: center;
+
+        }
+
+        .insta-inp {
+            color: grey;
+        }
+
+        .insta-a {
+            text-decoration: none;
+            color: rgb(0, 154, 243);
+            font-size: large;
+        }
+
+        .g-t-a {
+            text-align: center;
+        }
+
+        .b {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        column-gap: 20px;
+        }
+
+        .b-1 ,.b-2 {
+            background-color: black;
+            height: 50px;
+            width: 170px;
+            border-radius: 5px;
+           
+            color: white;
+
+        }
+
+        .b-1 ,.b-2 {
+            color: white;
+          
+            display: flex;
+          text-align: center;
+          align-items: center;
+          font-family: Arial, Helvetica, sans-serif;
+            
+           
+        }
+       .log-fb-insta{
+        color: rgb(40, 70, 241) !important;
+        
+       
+       }
+        .png-1{
+
+            height: 40px;
+         margin-right: 2px;
+       
+         padding: 5px;
+   
+    
+        }
+        .playstore{
+            color: white;
+        }
+        .web{
+            height: 50px;
+         
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="insta-full">
+        <div class="insta-half">
+            <div class="insta-name">
+                <h1><img class="web" src="./IMG/main-qimg-f83f339ce81c0b09c48d9f0d8f4753af.webp" alt=""></h1>
+            </div>
+            <div class="insta-inp">
+                <div class="insta-inp-1">
+                    <input class="inp-1" type="text , email , number" name="text , email , number" id="name1"
+                        placeholder="Phone number, username, or email">
+                </div>
+                <div class="insta-inp-2">
+                    <input class="inp-2" type="Password" name="  password" id="password" placeholder="Password">
+                </div>
+            </div>
+            <!-- Login btn -->
+            <div class="insta-login-1">
+                <div class="insta-login">
+                    <a href="#">Log in</a>
+                </div>
+            </div>
+            <!-- or -->
+            <div class="insta-or">
+                <span class="s-1">_________________</span><span class="s-2">OR</span><span
+                    class="s-3">________________</span>
+            </div>
+            <!-- fb -->
+            <div class="insta-fb">
+                <a class="log-fb-insta" href="#"><img class="fb-pic" src="./IMG/facebook.png" alt=""> Log in with Facebook</a>
+            </div>
+
+            <!-- forget -->
+            <div class="forget">
+                <a href="#">Forget Password?</a>
+            </div>
+            <!-- ////// -->
+        </div>
+    </div>
+    <!-- p2 -->
+    <div class="box">
+        <div class="box-1">
+            <p class="insta-p">Don't have an account ? <a class="insta-a" href="#">Sign up</a></p>
+        </div>
+    </div>
+    <!--  -->
+    <div class="g-t-a">
+        <p>Get the app.</p>
+    </div>
+    <!-- get the app logo -->
+    <div class="b">
+        <div class="b-1">
+            <img class="png-1" src="./IMG/google-play.png" alt="">
+<p class="playstore">Get it  on <br>Google Play</p>
+            <!-- <span class="get">Get it on <br> <span class="play">Google Play</span></span> -->
+        
+        </div>
+        <div class="b-2">
+            <img class="png-1" src="./IMG/microsoft.png" alt="">
+            <p class="playstore">Get it  from. <br>Microsoft </p>
+            <!-- <span class="get-1">Get it from. <span class="micro">Microsoft</span></span> -->
+
+        </div>
+    </div>
+</body>
+
+</html>
